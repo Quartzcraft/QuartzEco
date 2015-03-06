@@ -1,6 +1,6 @@
 #
 # Valuta | © QuartzCraft 2015
-# Economy_C.java
+# Valuta_C.java
 # All Rights Reserved.
 #
 
@@ -11,7 +11,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
  
-public class Economy_C implements CommandExecutor
+public class Valuta_C implements CommandExecutor
 {
 
 	@Override
