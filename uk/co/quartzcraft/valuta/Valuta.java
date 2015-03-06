@@ -1,5 +1,5 @@
 #
 # Valuta | © QuartzCraft 2015
-# Valuta.class
+# Valuta.java
 # All Rights Reserved.
 #
