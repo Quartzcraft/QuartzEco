@@ -1,3 +1,9 @@
+#
+# Valuta | © QuartzCraft 2015
+# Economy_C.java
+# All Rights Reserved.
+#
+
 package uk.co.quartzcraft.valuta;
  
 import org.bukkit.ChatColor;
