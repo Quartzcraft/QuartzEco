@@ -1,3 +1,9 @@
+#
+# Valuta | © QuartzCraft 2015
+# Valuta_M.java
+# All Rights Reserved.
+#
+
 package uk.co.quartzcraft.valuta;
  
 import java.util.HashMap;
