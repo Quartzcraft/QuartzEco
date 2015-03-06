@@ -3,3 +3,18 @@
 # Valuta.java
 # All Rights Reserved.
 #
+
+package uk.co.quartzcraft.valuta;
+
+public class Valuta
+	
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Valuta extends JavaPlugin
+{
+	public void onEnable()
+	{
+		getCommand("valuta").setExecutor(new ValutaCommand());
+	}
+
+}
