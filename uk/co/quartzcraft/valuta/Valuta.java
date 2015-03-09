@@ -13,6 +13,14 @@ public class Valuta extends JavaPlugin
 	public void onEnable()
 	{
 		getCommand("valuta").setExecutor(new ValutaCommand());
+		new Valuta_M(this);
+		api.loadBalances();
+		Bukkit.getPluginManager().registerEvents(new PlayerJoin(), this);
+	}
+	
+	public void onDisable()
+	{
+		api.saveBalances();
 	}
 
 }
