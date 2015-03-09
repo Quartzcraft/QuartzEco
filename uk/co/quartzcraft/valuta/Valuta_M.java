@@ -10,6 +10,13 @@ import java.util.HashMap;
 
 public class Valuta_M
 {
+	private static Valuta plugin;
+	
+	public Valuta_M(Valuta instance)
+	{
+		plugin = instance;
+	}
+	
 	public static HashMap<String, Double> balance = new HashMap<>();
 	
 	public static void setBalance(String player, double amount)
@@ -26,4 +33,15 @@ public class Valuta_M
 	{
 		return balance.containsKey(player); 
 	}
+	
+
+		public static HashMap<String, Double> getBalanceMap()
+		{
+			return balance;
+		}
+		
+		public static Valuta getPlugin()
+		{
+			return plugin;
+		}
 }
