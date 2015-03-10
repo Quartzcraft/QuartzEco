@@ -8,8 +8,9 @@ public class api
 	{
 		for(String p : Valuta_M.getBalanceMap().keySet())
 		{
-			plugin.getConfig().set("balance.+p, Valuta_M.getBalanceMap().get(p)");
+			plugin.getConfig().get("balance.+p, Valuta_M.getBalanceMap().get(p)");
 		}
+		plugin.saveConfig();
 	}
 	
 	public static void loadBalances()
