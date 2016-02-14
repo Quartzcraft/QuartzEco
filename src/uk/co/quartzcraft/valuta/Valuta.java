@@ -4,11 +4,14 @@ import java.io.File;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import uk.co.quartzcraft.valuta.util.YAMLManager;
+
 public class Valuta extends JavaPlugin {
 	
 	public static File dataFolder, configFile, playerFolder;
 	public static String currencySymbol;
 	public static Boolean beforeText;
+	public static YAMLManager configYAML;
 	
 	public void onEnable() {
 		dataFolder = getDataFolder();
@@ -23,6 +26,8 @@ public class Valuta extends JavaPlugin {
 		saveDefaultConfig();
 		currencySymbol = getConfig().getString("settings.currency symbol");
 		beforeText = getConfig().getBoolean("settings.symbol before");
+		
+		configYAML = new YAMLManager(configFile);
 	}
 	
 	public void onDisable()	{

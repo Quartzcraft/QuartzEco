@@ -62,4 +62,5 @@ public class CurrencyManager {
 		return new VPlayer(qp);
 	}
 	
+	
 }
