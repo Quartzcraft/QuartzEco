@@ -1,0 +1,4 @@
+settings:
+  currency symbol: 'r'
+  symbol before: false
+  starting balance: 1500

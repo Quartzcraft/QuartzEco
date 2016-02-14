@@ -5,7 +5,7 @@
  * 
  */
 
-package uk.co.quartzcraft.valuta;
+package uk.co.quartzcraft.valuta.util;
 
 import java.io.File;
 import java.io.IOException;
