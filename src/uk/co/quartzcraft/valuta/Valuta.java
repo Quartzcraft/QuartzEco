@@ -2,8 +2,11 @@ package uk.co.quartzcraft.valuta;
 
 import java.io.File;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import uk.co.quartzcraft.core.command.framework.QCommandFramework;
+import uk.co.quartzcraft.valuta.events.PlayerJoin;
 import uk.co.quartzcraft.valuta.util.YAMLManager;
 
 public class Valuta extends JavaPlugin {
@@ -12,6 +15,7 @@ public class Valuta extends JavaPlugin {
 	public static String currencySymbol;
 	public static Boolean beforeText;
 	public static YAMLManager configYAML;
+	public QCommandFramework commandFramework;
 	
 	public void onEnable() {
 		dataFolder = getDataFolder();
@@ -28,10 +32,8 @@ public class Valuta extends JavaPlugin {
 		beforeText = getConfig().getBoolean("settings.symbol before");
 		
 		configYAML = new YAMLManager(configFile);
-	}
-	
-	public void onDisable()	{
 		
+		Bukkit.getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
+		commandFramework = new QCommandFramework(this);
 	}
-
 }

@@ -158,7 +158,7 @@ public class VPlayer {
 			Group g = getQPlayer().getGroup();
 			YAMLManager ym = new YAMLManager(getDataFile());
 			ym.writeYAMLValue("data.name", getName());
-			ym.writeYAMLValue("data.balance", (Double) Valuta.configYAML.getYAMLValue("defaults." + g.getFullName()));
+			ym.writeYAMLValue("data.balance", 1500.00); //(Double) Valuta.configYAML.getYAMLValue("defaults." + g.getFullName()));
 		}
 	}
 	
@@ -174,10 +174,6 @@ public class VPlayer {
 	
 	public String getName() {
 		return getPlayer().getName();
-	}
-	
-	public void unloadD() {
-		
 	}
 	
 }
